@@ -1,0 +1,3 @@
+- [x] Enlarge the landing-page platform-number figures while retaining the existing four-column hierarchy and Court Lime styling.
+- [x] Verify the updated section in the live preview without generating new visual assets.
+- [ ] Save a refined checkpoint and provide download guidance.

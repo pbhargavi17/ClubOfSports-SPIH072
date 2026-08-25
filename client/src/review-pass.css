@@ -1,0 +1,46 @@
+/* Floodlit Clubhouse review pass: custom court arcs, venue lanes and score geometry replace generic surface treatment. */
+.brand-mark { gap:10px; }
+.brand-symbol { position:relative; width:36px; height:36px; overflow:hidden; padding:0; }
+.brand-symbol img { position:absolute; inset:0; width:100%; height:100%; opacity:.18; mix-blend-mode:multiply; }
+.brand-arc { position:absolute; display:block; width:19px; height:25px; border:4px solid #0b160e; border-right:0; border-radius:16px 0 0 16px; }
+.brand-arc-one { left:7px; top:5px; }
+.brand-arc-two { left:10px; top:8px; height:19px; border-color:#365d1d; border-width:2px; }
+.brand-point { position:absolute; right:7px; top:16px; width:5px; height:5px; background:#0b160e; border-radius:50%; }
+.brand-word { font-size:15px; letter-spacing:-.085em; }
+
+.fragment-section { position:relative; overflow:hidden; }
+.fragment-section:before { content:""; position:absolute; width:480px; height:480px; right:-170px; bottom:-315px; border:1px solid rgba(23,46,29,.22); border-radius:50%; box-shadow:0 0 0 38px rgba(23,46,29,.035),0 0 0 76px rgba(23,46,29,.025); }
+.fragment-section:after { content:""; position:absolute; left:0; right:0; top:24px; height:1px; background:repeating-linear-gradient(90deg,#1d3925 0 38px,transparent 38px 53px); opacity:.22; }
+.fragment-section>* { position:relative; z-index:1; }
+.pricing-section { position:relative; overflow:hidden; }
+.pricing-section:before { content:""; position:absolute; top:75px; right:-165px; width:510px; height:260px; border:1px solid rgba(23,46,29,.2); border-radius:260px 260px 0 0; transform:rotate(-16deg); }
+.pricing-section:after { content:""; position:absolute; right:0; left:48%; bottom:42px; height:1px; background:repeating-linear-gradient(90deg,#1e3c27 0 25px,transparent 25px 38px); opacity:.33; }
+.pricing-section .section-intro,.pricing-section .pricing-grid { position:relative; z-index:1; }
+.pricing-card { background:linear-gradient(135deg,#f8f9f5,#e8ede5); border-color:#cbd5c9; border-radius:10px 18px 10px 18px; }
+.pricing-card:after { content:""; position:absolute; right:12px; bottom:12px; width:28px; height:28px; border-right:1px solid rgba(32,61,39,.32); border-bottom:1px solid rgba(32,61,39,.32); border-radius:0 0 8px 0; }
+.pricing-card.is-featured { background:#14211a; }
+.athlete-card { position:relative; overflow:hidden; background:linear-gradient(135deg,#1b281f,#142018); border-radius:15px 15px 9px 15px; }
+.athlete-card:before { content:""; position:absolute; right:-33px; top:57px; width:106px; height:106px; border:1px solid rgba(199,242,92,.14); border-radius:50%; box-shadow:0 0 0 18px rgba(199,242,92,.025); }
+.athlete-card:after { content:""; position:absolute; left:17px; right:17px; bottom:59px; height:1px; background:repeating-linear-gradient(90deg,rgba(199,242,92,.26) 0 18px,transparent 18px 25px); }
+.athlete-card>* { position:relative; z-index:1; }
+.connection-body { position:relative; overflow:hidden; }
+.connection-body:before { content:""; position:absolute; right:-74px; bottom:-104px; width:240px; height:240px; border:1px solid rgba(199,242,92,.12); border-radius:50%; box-shadow:0 0 0 30px rgba(199,242,92,.018); }
+.connection-body>* { position:relative; z-index:1; }
+.request-card { position:relative; overflow:hidden; background:linear-gradient(130deg,#18271e,#152119); border-radius:13px 13px 8px 13px; }
+.request-card:after { content:""; position:absolute; top:0; bottom:0; left:82px; width:1px; background:repeating-linear-gradient(to bottom,rgba(199,242,92,.35) 0 11px,transparent 11px 18px); opacity:.7; }
+.request-card>img,.request-card>div { position:relative; z-index:1; }
+.numbers-section strong { margin:16px 0 7px; font-size:clamp(52px,4.5vw,74px); line-height:.86; letter-spacing:-.095em; text-shadow:0 8px 20px rgba(199,242,92,.11); }
+.numbers-section span { font-size:12px; font-weight:700; }
+@media (max-width:560px) { .numbers-section strong { margin:12px 0 6px; font-size:clamp(41px,12vw,56px); } }
+@media (max-width:560px) { .brand-symbol{width:32px;height:32px}.brand-arc{transform:scale(.88);transform-origin:center}.brand-word{font-size:13px} }
+
+.top-avatar-button { border:0; padding:0; background:transparent; border-radius:50%; cursor:pointer; display:grid; place-items:center; }
+.top-avatar-button:focus-visible { outline:2px solid #c7f25c; outline-offset:4px; }
+.account-menu { position:absolute; right:0; top:calc(100% + 12px); width:220px; padding:8px; border:1px solid rgba(199,242,92,.22); border-radius:14px; background:#17231b; box-shadow:0 18px 45px rgba(0,0,0,.34); z-index:80; }
+.account-menu-heading { display:flex; flex-direction:column; gap:3px; padding:10px 10px 12px; border-bottom:1px solid rgba(199,242,92,.12); margin-bottom:5px; }
+.account-menu-heading span { color:rgba(233,241,232,.58); font-size:11px; }
+.account-menu button { width:100%; display:flex; align-items:center; gap:9px; padding:10px; border:0; border-radius:9px; background:transparent; color:#eef5e9; text-align:left; cursor:pointer; font:inherit; font-size:13px; }
+.account-menu button:hover { background:rgba(199,242,92,.1); color:#c7f25c; }
+.account-menu .account-menu-danger { color:#ff9b8f; border-top:1px solid rgba(255,155,143,.14); margin-top:5px; border-radius:0 0 8px 8px; }
+.text-muted { color:rgba(233,241,232,.58); font-size:12px; display:flex; align-items:center; gap:6px; }
+@media (max-width:760px) { .account-menu { right:-36px; } }
